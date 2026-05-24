@@ -324,7 +324,7 @@ export default function Home() {
             Comece grátis. Evolua quando quiser.
           </h2>
           <p className="text-cinza-texto text-base mb-12">
-            Menos que um cafezinho por mês no plano anual.
+            Comece grátis. Assine quando fizer sentido.
           </p>
           {/* Mobile: scroll horizontal — Pro aparece primeiro */}
           <div className="md:hidden -mx-6 overflow-x-auto hide-scrollbar">
@@ -333,8 +333,11 @@ export default function Home() {
               <div className="snap-center flex-none w-[82vw] bg-cinza-escuro rounded-2xl p-6 border border-verde flex flex-col relative shadow-[0_0_40px_rgba(200,240,0,0.1)]">
                 <div className="absolute -top-3.5 left-1/2 -translate-x-1/2 bg-verde text-preto text-xs font-medium px-4 py-1 rounded-full whitespace-nowrap">RECOMENDADO</div>
                 <p className="font-brand text-verde text-sm tracking-wide mb-3">Avança Pro</p>
-                <p className="font-display font-extrabold text-4xl mb-1">R$ 34,90</p>
-                <p className="text-cinza-texto text-sm mb-6">por ano · ou 3× R$ 12,90</p>
+                <p className="font-display font-extrabold text-4xl mb-1">
+                  R$ 34,90<span className="font-sans font-normal text-lg text-cinza-texto">/ano</span>
+                </p>
+                <p className="text-branco text-sm mb-1">Menos que um cafezinho por mês</p>
+                <p className="text-cinza-texto text-xs mb-6">ou 3× R$ 12,90</p>
                 <ul className="space-y-3 mb-8 flex-1">
                   {PRO_FEATURES.map((f) => (
                     <li key={f} className="flex items-center gap-2">
