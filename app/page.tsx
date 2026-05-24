@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import { CarouselMobile } from '../components/CarouselMobile'
 
 // ── Links das lojas — atualizar quando o app for publicado ────────────────────
 const PLAY_STORE_URL = '#' // TODO: https://play.google.com/store/apps/details?id=com.avanca.app
@@ -205,8 +206,8 @@ export default function Home() {
             Trabalhar muito não é o mesmo que ganhar bem.
           </h2>
           {/* Mobile: scroll horizontal */}
-          <div className="md:hidden -mx-6 overflow-x-auto hide-scrollbar">
-            <div className="flex gap-3 px-6 snap-x snap-mandatory pb-2">
+          <CarouselMobile count={3}>
+            <div className="flex gap-3 px-6 pb-2">
               {PROBLEMS.map(({ icon, text }) => (
                 <div key={icon} className="snap-center flex-none w-[78vw] bg-preto/80 backdrop-blur-sm rounded-2xl p-6 border border-cinza-medio">
                   <div className="mb-4"><ProblemIcon name={icon} /></div>
@@ -214,12 +215,7 @@ export default function Home() {
                 </div>
               ))}
             </div>
-          </div>
-          <div className="flex justify-center gap-2 mt-4 md:hidden">
-            <span className="w-2 h-2 rounded-full bg-verde inline-block" />
-            <span className="w-2 h-2 rounded-full bg-cinza-medio inline-block" />
-            <span className="w-2 h-2 rounded-full bg-cinza-medio inline-block" />
-          </div>
+          </CarouselMobile>
           {/* Desktop: grid */}
           <div className="hidden md:grid md:grid-cols-3 gap-4">
             {PROBLEMS.map(({ icon, text }) => (
@@ -250,8 +246,8 @@ export default function Home() {
             Simples como deve ser.
           </h2>
           {/* Mobile: scroll horizontal com snap */}
-          <div className="md:hidden -mx-6 overflow-x-auto hide-scrollbar">
-            <div className="flex gap-4 px-6 snap-x snap-mandatory pb-2">
+          <CarouselMobile count={3}>
+            <div className="flex gap-4 px-6 pb-2">
               {STEPS.map(({ num, title, desc }) => (
                 <div key={num} className="snap-center flex-none w-[72vw] bg-preto/50 border border-cinza-medio rounded-2xl p-6">
                   <span className="font-display font-extrabold text-6xl text-verde/25 block mb-4 leading-none">{num}</span>
@@ -260,12 +256,7 @@ export default function Home() {
                 </div>
               ))}
             </div>
-          </div>
-          <div className="flex justify-center gap-2 mt-4 md:hidden">
-            <span className="w-2 h-2 rounded-full bg-verde inline-block" />
-            <span className="w-2 h-2 rounded-full bg-cinza-medio inline-block" />
-            <span className="w-2 h-2 rounded-full bg-cinza-medio inline-block" />
-          </div>
+          </CarouselMobile>
           {/* Desktop: grid */}
           <div className="hidden md:grid md:grid-cols-3 gap-10">
             {STEPS.map(({ num, title, desc }) => (
@@ -304,8 +295,8 @@ export default function Home() {
           </div>
 
           {/* Mobile: um phone de cada vez em scroll */}
-          <div className="md:hidden -mx-6 overflow-x-auto hide-scrollbar">
-            <div className="flex snap-x snap-mandatory pb-4">
+          <CarouselMobile count={2}>
+            <div className="flex pb-4">
               <div className="snap-center flex-none w-screen flex justify-center">
                 <PhoneFrame src="/screen-ganhos.jpg" alt="Avança Pro — ganhos do mês" />
               </div>
@@ -313,11 +304,7 @@ export default function Home() {
                 <PhoneFrame src="/screen-apps.jpg" alt="Avança Pro — qual app paga mais" />
               </div>
             </div>
-          </div>
-          <div className="flex justify-center gap-2 mt-3 md:hidden">
-            <span className="w-2 h-2 rounded-full bg-verde inline-block" />
-            <span className="w-2 h-2 rounded-full bg-cinza-medio inline-block" />
-          </div>
+          </CarouselMobile>
           {/* Desktop: dois phones com offset */}
           <div className="hidden md:relative md:flex justify-center items-end gap-4 h-[520px]">
             <div className="self-start mt-8">
@@ -341,8 +328,8 @@ export default function Home() {
             Um pagamento só pro ano todo.
           </p>
           {/* Mobile: scroll horizontal — Pro aparece primeiro */}
-          <div className="md:hidden -mx-6 overflow-x-auto hide-scrollbar">
-            <div className="flex gap-3 px-6 snap-x snap-mandatory pb-2 text-left">
+          <CarouselMobile count={3}>
+            <div className="flex gap-3 px-6 pb-2 text-left">
               {/* Pro primeiro no mobile */}
               <div className="snap-center flex-none w-[82vw] bg-cinza-escuro rounded-2xl p-6 border border-verde flex flex-col relative shadow-[0_0_40px_rgba(200,240,0,0.1)]">
                 <div className="absolute -top-3.5 left-1/2 -translate-x-1/2 bg-verde text-preto text-xs font-medium px-4 py-1 rounded-full whitespace-nowrap">RECOMENDADO</div>
@@ -393,12 +380,7 @@ export default function Home() {
                 <div className="block text-center border border-cinza-medio text-cinza-texto text-sm font-medium py-3.5 rounded-xl">Em breve</div>
               </div>
             </div>
-          </div>
-          <div className="flex justify-center gap-2 mt-4 md:hidden">
-            <span className="w-2 h-2 rounded-full bg-verde inline-block" />
-            <span className="w-2 h-2 rounded-full bg-cinza-medio inline-block" />
-            <span className="w-2 h-2 rounded-full bg-cinza-medio inline-block" />
-          </div>
+          </CarouselMobile>
 
           {/* Desktop: grid 3 colunas */}
           <div className="hidden md:grid md:grid-cols-3 gap-4 text-left items-start">
