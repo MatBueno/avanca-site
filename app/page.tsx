@@ -332,7 +332,7 @@ export default function Home() {
               {/* Pro primeiro no mobile */}
               <div className="snap-center flex-none w-[82vw] bg-cinza-escuro rounded-2xl p-6 border border-verde flex flex-col relative shadow-[0_0_40px_rgba(200,240,0,0.1)]">
                 <div className="absolute -top-3.5 left-1/2 -translate-x-1/2 bg-verde text-preto text-xs font-medium px-4 py-1 rounded-full whitespace-nowrap">RECOMENDADO</div>
-                <p className="text-verde text-xs uppercase tracking-widest mb-3">Avança Pro</p>
+                <p className="font-brand text-verde text-xs uppercase tracking-widest mb-3">Avança Pro</p>
                 <p className="font-display font-extrabold text-4xl mb-1">R$ 34,90</p>
                 <p className="text-cinza-texto text-sm mb-6">por ano · ou 3× R$ 12,90</p>
                 <ul className="space-y-3 mb-8 flex-1">
@@ -347,7 +347,7 @@ export default function Home() {
               </div>
               {/* Free */}
               <div className="snap-center flex-none w-[82vw] bg-cinza-escuro rounded-2xl p-6 border border-cinza-medio flex flex-col">
-                <p className="text-cinza-texto text-xs uppercase tracking-widest mb-3">Grátis</p>
+                <p className="font-brand text-cinza-texto text-xs uppercase tracking-widest mb-3">Avança Grátis</p>
                 <p className="font-display font-extrabold text-4xl mb-1">R$ 0</p>
                 <p className="text-cinza-texto text-sm mb-6">pra sempre</p>
                 <ul className="space-y-3 mb-8 flex-1">
@@ -363,7 +363,7 @@ export default function Home() {
               {/* Pro Max */}
               <div className="snap-center flex-none w-[82vw] bg-cinza-escuro rounded-2xl p-6 border border-cinza-medio flex flex-col opacity-60">
                 <div className="flex items-center justify-between mb-3">
-                  <p className="text-cinza-texto text-xs uppercase tracking-widest">Avança Pro Max</p>
+                  <p className="font-brand text-cinza-texto text-xs uppercase tracking-widest">Avança Pro Max</p>
                   <span className="bg-cinza-medio text-cinza-texto text-[10px] font-medium px-3 py-1 rounded-full">EM BREVE</span>
                 </div>
                 <p className="font-display font-extrabold text-4xl mb-1">R$ 79,90</p>
@@ -385,7 +385,7 @@ export default function Home() {
           <div className="hidden md:grid md:grid-cols-3 gap-4 text-left items-start">
             {/* FREE */}
             <div className="bg-cinza-escuro rounded-2xl p-6 border border-cinza-medio flex flex-col">
-              <p className="text-cinza-texto text-xs uppercase tracking-widest mb-3">Grátis</p>
+              <p className="font-brand text-cinza-texto text-xs uppercase tracking-widest mb-3">Avança Grátis</p>
               <p className="font-display font-extrabold text-4xl mb-1">R$ 0</p>
               <p className="text-cinza-texto text-sm mb-6">pra sempre</p>
               <ul className="space-y-3 mb-8 flex-1">
@@ -406,7 +406,7 @@ export default function Home() {
               <div className="absolute -top-3.5 left-1/2 -translate-x-1/2 bg-verde text-preto text-xs font-medium px-4 py-1 rounded-full whitespace-nowrap">
                 RECOMENDADO
               </div>
-              <p className="text-verde text-xs uppercase tracking-widest mb-3">Avança Pro</p>
+              <p className="font-brand text-verde text-xs uppercase tracking-widest mb-3">Avança Pro</p>
               <p className="font-display font-extrabold text-4xl mb-1">R$ 34,90</p>
               <p className="text-cinza-texto text-sm mb-6">por ano · ou 3× R$ 12,90</p>
               <ul className="space-y-3 mb-8 flex-1">
@@ -425,7 +425,7 @@ export default function Home() {
             {/* PRO MAX — em breve */}
             <div className="bg-cinza-escuro rounded-2xl p-6 border border-cinza-medio flex flex-col opacity-60">
               <div className="flex items-center justify-between mb-3">
-                <p className="text-cinza-texto text-xs uppercase tracking-widest">Avança Pro Max</p>
+                <p className="font-brand text-cinza-texto text-xs uppercase tracking-widest">Avança Pro Max</p>
                 <span className="bg-cinza-medio text-cinza-texto text-[10px] font-medium px-3 py-1 rounded-full whitespace-nowrap">
                   EM BREVE
                 </span>
