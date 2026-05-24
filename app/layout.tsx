@@ -1,5 +1,5 @@
 import type { Metadata } from 'next'
-import { DM_Sans, Syne } from 'next/font/google'
+import { DM_Sans, Plus_Jakarta_Sans, Syne } from 'next/font/google'
 import './globals.css'
 
 const dmSans = DM_Sans({
@@ -9,10 +9,17 @@ const dmSans = DM_Sans({
   display: 'swap',
 })
 
+const plusJakartaSans = Plus_Jakarta_Sans({
+  subsets: ['latin'],
+  variable: '--font-plus-jakarta-sans',
+  weight: ['700', '800'],
+  display: 'swap',
+})
+
 const syne = Syne({
   subsets: ['latin'],
   variable: '--font-syne',
-  weight: ['700', '800'],
+  weight: ['800'],
   display: 'swap',
 })
 
@@ -39,7 +46,7 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="pt-BR" className={`${dmSans.variable} ${syne.variable}`}>
+    <html lang="pt-BR" className={`${dmSans.variable} ${plusJakartaSans.variable} ${syne.variable}`}>
       <body className="bg-preto text-branco antialiased font-sans">{children}</body>
     </html>
   )

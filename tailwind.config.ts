@@ -17,8 +17,9 @@ const config: Config = {
         branco: '#FAFAFA',
       },
       fontFamily: {
-        sans: ['var(--font-dm-sans)', 'ui-sans-serif', 'system-ui'],
-        display: ['var(--font-syne)', 'ui-sans-serif', 'system-ui'],
+        sans:    ['var(--font-dm-sans)', 'ui-sans-serif', 'system-ui'],
+        display: ['var(--font-plus-jakarta-sans)', 'ui-sans-serif', 'system-ui'],
+        brand:   ['var(--font-syne)', 'ui-sans-serif', 'system-ui'],
       },
     },
   },

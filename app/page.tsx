@@ -66,7 +66,7 @@ const PRO_FEATURES = [
 function Wordmark({ size = 'md' }: { size?: 'sm' | 'md' | 'lg' }) {
   const cls = size === 'lg' ? 'text-2xl' : size === 'sm' ? 'text-base' : 'text-xl'
   return (
-    <span className={`font-display font-extrabold tracking-tight ${cls}`}>
+    <span className={`font-brand font-extrabold tracking-tight ${cls}`}>
       Avan<span className="text-verde">ça</span>
     </span>
   )
