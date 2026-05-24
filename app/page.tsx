@@ -333,11 +333,7 @@ export default function Home() {
               <div className="snap-center flex-none w-[82vw] bg-cinza-escuro rounded-2xl p-6 border border-verde flex flex-col relative shadow-[0_0_40px_rgba(200,240,0,0.1)]">
                 <div className="absolute -top-3.5 left-1/2 -translate-x-1/2 bg-verde text-preto text-xs font-medium px-4 py-1 rounded-full whitespace-nowrap">RECOMENDADO</div>
                 <p className="font-brand text-verde text-sm tracking-wide mb-3">Avança Pro</p>
-                <div className="mb-4">
-                  <span className="bg-verde/15 text-verde text-sm font-medium px-3 py-1.5 rounded-full">
-                    Um pagamento só pro ano todo!
-                  </span>
-                </div>
+                <p className="text-verde font-semibold text-sm mb-3">Um pagamento só pro ano todo.</p>
                 <p className="font-display font-extrabold text-4xl mb-2">R$ 34,90</p>
                 <p className="text-branco text-sm mb-1">Menos que um cafezinho por mês</p>
                 <p className="text-cinza-texto text-xs mb-6">ou 3× R$ 12,90</p>
@@ -413,11 +409,7 @@ export default function Home() {
                 RECOMENDADO
               </div>
               <p className="font-brand text-verde text-sm tracking-wide mb-3">Avança Pro</p>
-              <div className="mb-4">
-                <span className="bg-verde/15 text-verde text-sm font-medium px-3 py-1.5 rounded-full">
-                  Um pagamento só pro ano todo!
-                </span>
-              </div>
+              <p className="text-verde font-semibold text-sm mb-3">Um pagamento só pro ano todo.</p>
               <p className="font-display font-extrabold text-4xl mb-2">R$ 34,90</p>
               <p className="text-branco text-sm mb-1">Menos que um cafezinho por mês</p>
               <p className="text-cinza-texto text-xs mb-6">ou 3× R$ 12,90</p>
