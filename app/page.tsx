@@ -334,9 +334,9 @@ export default function Home() {
                 <div className="absolute -top-3.5 left-1/2 -translate-x-1/2 bg-verde text-preto text-xs font-medium px-4 py-1 rounded-full whitespace-nowrap">RECOMENDADO</div>
                 <p className="font-brand text-verde text-sm tracking-wide mb-3">Avança Pro</p>
                 <p className="text-verde font-semibold text-sm mb-3">Um pagamento só pro ano todo.</p>
-                <p className="font-display font-extrabold text-4xl mb-2">R$ 34,90</p>
-                <p className="text-branco text-sm mb-1">Menos que um cafezinho por mês</p>
-                <p className="text-cinza-texto text-xs mb-6">ou 3× R$ 12,90</p>
+                <p className="font-display font-extrabold text-4xl mb-1">R$ 34,90</p>
+                <p className="text-cinza-texto text-xs mb-3">ou 3× R$ 12,90</p>
+                <p className="text-branco text-sm mb-6">Menos que um cafezinho por mês</p>
                 <ul className="space-y-3 mb-8 flex-1">
                   {PRO_FEATURES.map((f) => (
                     <li key={f} className="flex items-center gap-2">
@@ -410,9 +410,9 @@ export default function Home() {
               </div>
               <p className="font-brand text-verde text-sm tracking-wide mb-3">Avança Pro</p>
               <p className="text-verde font-semibold text-sm mb-3">Um pagamento só pro ano todo.</p>
-              <p className="font-display font-extrabold text-4xl mb-2">R$ 34,90</p>
-              <p className="text-branco text-sm mb-1">Menos que um cafezinho por mês</p>
-              <p className="text-cinza-texto text-xs mb-6">ou 3× R$ 12,90</p>
+              <p className="font-display font-extrabold text-4xl mb-1">R$ 34,90</p>
+              <p className="text-cinza-texto text-xs mb-3">ou 3× R$ 12,90</p>
+              <p className="text-branco text-sm mb-6">Menos que um cafezinho por mês</p>
               <ul className="space-y-3 mb-8 flex-1">
                 {PRO_FEATURES.map((f) => (
                   <li key={f} className="flex items-center gap-2">
