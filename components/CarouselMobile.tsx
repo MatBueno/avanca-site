@@ -14,7 +14,7 @@ export function CarouselMobile({ children, count }: { children: React.ReactNode;
   }
 
   return (
-    <div className="md:hidden">
+    <div className="md:hidden overflow-hidden">
       <div ref={ref} onScroll={onScroll} className="-mx-6 overflow-x-auto hide-scrollbar snap-x snap-mandatory">
         {children}
       </div>
