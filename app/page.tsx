@@ -215,6 +215,11 @@ export default function Home() {
               ))}
             </div>
           </div>
+          <div className="flex justify-center gap-2 mt-4 md:hidden">
+            <span className="w-2 h-2 rounded-full bg-verde inline-block" />
+            <span className="w-2 h-2 rounded-full bg-cinza-medio inline-block" />
+            <span className="w-2 h-2 rounded-full bg-cinza-medio inline-block" />
+          </div>
           {/* Desktop: grid */}
           <div className="hidden md:grid md:grid-cols-3 gap-4">
             {PROBLEMS.map(({ icon, text }) => (
@@ -256,6 +261,11 @@ export default function Home() {
               ))}
             </div>
           </div>
+          <div className="flex justify-center gap-2 mt-4 md:hidden">
+            <span className="w-2 h-2 rounded-full bg-verde inline-block" />
+            <span className="w-2 h-2 rounded-full bg-cinza-medio inline-block" />
+            <span className="w-2 h-2 rounded-full bg-cinza-medio inline-block" />
+          </div>
           {/* Desktop: grid */}
           <div className="hidden md:grid md:grid-cols-3 gap-10">
             {STEPS.map(({ num, title, desc }) => (
@@ -295,14 +305,18 @@ export default function Home() {
 
           {/* Mobile: um phone de cada vez em scroll */}
           <div className="md:hidden -mx-6 overflow-x-auto hide-scrollbar">
-            <div className="flex gap-4 px-6 snap-x snap-mandatory pb-2 justify-start">
-              <div className="snap-center flex-none">
+            <div className="flex snap-x snap-mandatory pb-4">
+              <div className="snap-center flex-none w-screen flex justify-center">
                 <PhoneFrame src="/screen-ganhos.jpg" alt="Avança Pro — ganhos do mês" />
               </div>
-              <div className="snap-center flex-none">
+              <div className="snap-center flex-none w-screen flex justify-center">
                 <PhoneFrame src="/screen-apps.jpg" alt="Avança Pro — qual app paga mais" />
               </div>
             </div>
+          </div>
+          <div className="flex justify-center gap-2 mt-3 md:hidden">
+            <span className="w-2 h-2 rounded-full bg-verde inline-block" />
+            <span className="w-2 h-2 rounded-full bg-cinza-medio inline-block" />
           </div>
           {/* Desktop: dois phones com offset */}
           <div className="hidden md:relative md:flex justify-center items-end gap-4 h-[520px]">
@@ -379,6 +393,11 @@ export default function Home() {
                 <div className="block text-center border border-cinza-medio text-cinza-texto text-sm font-medium py-3.5 rounded-xl">Em breve</div>
               </div>
             </div>
+          </div>
+          <div className="flex justify-center gap-2 mt-4 md:hidden">
+            <span className="w-2 h-2 rounded-full bg-verde inline-block" />
+            <span className="w-2 h-2 rounded-full bg-cinza-medio inline-block" />
+            <span className="w-2 h-2 rounded-full bg-cinza-medio inline-block" />
           </div>
 
           {/* Desktop: grid 3 colunas */}
