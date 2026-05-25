@@ -329,7 +329,7 @@ export default function Home() {
           </p>
           {/* Mobile: scroll horizontal — Pro aparece primeiro */}
           <CarouselMobile count={3}>
-            <div className="flex gap-3 px-6 pb-2 text-left">
+            <div className="flex gap-3 px-6 pt-5 pb-2 text-left">
               {/* Pro primeiro no mobile */}
               <div className="snap-center flex-none w-[82vw] bg-cinza-escuro rounded-2xl p-6 border border-verde flex flex-col relative shadow-[0_0_40px_rgba(200,240,0,0.1)]">
                 <div className="absolute -top-3.5 left-1/2 -translate-x-1/2 bg-verde text-preto text-xs font-medium px-4 py-1 rounded-full whitespace-nowrap">RECOMENDADO</div>
