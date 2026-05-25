@@ -1,9 +1,19 @@
 'use client'
-import { useRef, useState } from 'react'
+import { useRef, useState, useEffect } from 'react'
 
-export function CarouselMobile({ children, count }: { children: React.ReactNode; count: number }) {
+export function CarouselMobile({ children, count, defaultIndex = 0 }: { children: React.ReactNode; count: number; defaultIndex?: number }) {
   const ref = useRef<HTMLDivElement>(null)
-  const [active, setActive] = useState(0)
+  const [active, setActive] = useState(defaultIndex)
+
+  useEffect(() => {
+    if (defaultIndex > 0 && ref.current) {
+      const el = ref.current
+      requestAnimationFrame(() => {
+        const max = el.scrollWidth - el.clientWidth
+        el.scrollLeft = (defaultIndex / (count - 1)) * max
+      })
+    }
+  }, [])
 
   function onScroll() {
     const el = ref.current

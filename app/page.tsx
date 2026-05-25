@@ -207,7 +207,7 @@ export default function Home() {
           </h2>
           {/* Mobile: scroll horizontal */}
           <CarouselMobile count={3}>
-            <div className="flex gap-3 px-6 pb-2">
+            <div className="flex gap-3 px-[11vw] pb-2">
               {PROBLEMS.map(({ icon, text }) => (
                 <div key={icon} className="snap-center flex-none w-[78vw] bg-preto/80 backdrop-blur-sm rounded-2xl p-6 border border-cinza-medio">
                   <div className="mb-4"><ProblemIcon name={icon} /></div>
@@ -247,7 +247,7 @@ export default function Home() {
           </h2>
           {/* Mobile: scroll horizontal com snap */}
           <CarouselMobile count={3}>
-            <div className="flex gap-4 px-6 pb-2">
+            <div className="flex gap-4 px-[14vw] pb-2">
               {STEPS.map(({ num, title, desc }) => (
                 <div key={num} className="snap-center flex-none w-[72vw] bg-preto/50 border border-cinza-medio rounded-2xl p-6">
                   <span className="font-display font-extrabold text-6xl text-verde/25 block mb-4 leading-none">{num}</span>
@@ -327,10 +327,25 @@ export default function Home() {
           <p className="text-verde font-semibold text-base mb-12">
             Um pagamento só pro ano todo.
           </p>
-          {/* Mobile: scroll horizontal — Pro aparece primeiro */}
-          <CarouselMobile count={3}>
-            <div className="flex gap-3 px-6 pt-5 pb-2 text-left">
-              {/* Pro primeiro no mobile */}
+          {/* Mobile: scroll horizontal — Pro aparece no centro */}
+          <CarouselMobile count={3} defaultIndex={1}>
+            <div className="flex gap-3 px-[9vw] pt-5 pb-2 text-left">
+              {/* Free */}
+              <div className="snap-center flex-none w-[82vw] bg-cinza-escuro rounded-2xl p-6 border border-cinza-medio flex flex-col">
+                <p className="font-brand text-cinza-texto text-sm tracking-wide mb-3">Avança Grátis</p>
+                <p className="font-display font-extrabold text-4xl mb-1">R$ 0</p>
+                <p className="text-cinza-texto text-sm mb-6">pra sempre</p>
+                <ul className="space-y-3 mb-8 flex-1">
+                  {FREE_FEATURES.map((f) => (
+                    <li key={f} className="flex items-center gap-2">
+                      <span className="text-cinza-claro text-xs">✓</span>
+                      <span className="text-cinza-texto text-sm">{f}</span>
+                    </li>
+                  ))}
+                </ul>
+                <a href={PLAY_STORE_URL} className="block text-center border border-cinza-medio text-branco text-sm font-medium py-3.5 rounded-xl">Baixar grátis</a>
+              </div>
+              {/* Pro — centro/padrão */}
               <div className="snap-center flex-none w-[82vw] bg-cinza-escuro rounded-2xl p-6 border border-verde flex flex-col relative shadow-[0_0_40px_rgba(200,240,0,0.1)]">
                 <div className="absolute -top-3.5 left-1/2 -translate-x-1/2 bg-verde text-preto text-xs font-medium px-4 py-1 rounded-full whitespace-nowrap">RECOMENDADO</div>
                 <p className="font-brand text-verde text-sm tracking-wide mb-3">Avança Pro</p>
@@ -346,21 +361,6 @@ export default function Home() {
                   ))}
                 </ul>
                 <a href={PLAY_STORE_URL} className="block text-center bg-verde text-preto text-sm font-medium py-3.5 rounded-xl">Começar com Pro</a>
-              </div>
-              {/* Free */}
-              <div className="snap-center flex-none w-[82vw] bg-cinza-escuro rounded-2xl p-6 border border-cinza-medio flex flex-col">
-                <p className="font-brand text-cinza-texto text-sm tracking-wide mb-3">Avança Grátis</p>
-                <p className="font-display font-extrabold text-4xl mb-1">R$ 0</p>
-                <p className="text-cinza-texto text-sm mb-6">pra sempre</p>
-                <ul className="space-y-3 mb-8 flex-1">
-                  {FREE_FEATURES.map((f) => (
-                    <li key={f} className="flex items-center gap-2">
-                      <span className="text-cinza-claro text-xs">✓</span>
-                      <span className="text-cinza-texto text-sm">{f}</span>
-                    </li>
-                  ))}
-                </ul>
-                <a href={PLAY_STORE_URL} className="block text-center border border-cinza-medio text-branco text-sm font-medium py-3.5 rounded-xl">Baixar grátis</a>
               </div>
               {/* Pro Max */}
               <div className="snap-center flex-none w-[82vw] bg-cinza-escuro rounded-2xl p-6 border border-cinza-medio flex flex-col opacity-60">
