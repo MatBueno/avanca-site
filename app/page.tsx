@@ -319,7 +319,7 @@ export default function Home() {
 
       {/* PRICING */}
       <section id="precos" className="py-20 px-6">
-        <div className="max-w-3xl mx-auto text-center">
+        <div className="max-w-5xl mx-auto text-center">
           <SectionLabel>Planos</SectionLabel>
           <h2 className="font-display font-extrabold text-3xl sm:text-4xl md:text-5xl mt-3 mb-3 leading-[1.08]">
             Comece grátis. Evolua quando quiser.
@@ -368,11 +368,15 @@ export default function Home() {
                   <p className="font-brand text-cinza-texto text-sm tracking-wide">Avança Pro Max</p>
                   <span className="bg-cinza-medio text-cinza-texto text-[10px] font-medium px-3 py-1 rounded-full">EM BREVE</span>
                 </div>
-                <p className="font-display font-extrabold text-4xl mb-6">R$ 79,90<span className="text-cinza-texto text-xl font-normal font-sans"> / ano</span></p>
+                <p className="font-display font-extrabold text-4xl mb-6 whitespace-nowrap">R$ 79,90<span className="text-cinza-texto text-xl font-normal font-sans"> / ano</span></p>
                 <ul className="space-y-3 mb-8 flex-1">
-                  {['Tudo do Avança Pro', 'Eva — IA emocional (V2)', 'Módulo Família (V3)'].map((f) => (
-                    <li key={f} className="flex items-center gap-2">
-                      <span className="text-cinza-claro text-xs">·</span>
+                  {[
+                    'Tudo do Avança Pro',
+                    'Eva — IA que celebra suas metas e te apoia quando o cansaço bater',
+                    'Família — momentos de qualidade com seus filhos e companheiro(a)',
+                  ].map((f) => (
+                    <li key={f} className="flex items-start gap-2">
+                      <span className="text-cinza-claro text-xs mt-1 flex-shrink-0">·</span>
                       <span className="text-cinza-texto text-sm">{f}</span>
                     </li>
                   ))}
@@ -383,11 +387,11 @@ export default function Home() {
           </CarouselMobile>
 
           {/* Desktop: grid 3 colunas */}
-          <div className="hidden md:grid md:grid-cols-3 gap-4 text-left items-start">
+          <div className="hidden md:grid md:grid-cols-3 gap-6 text-left items-start">
             {/* FREE */}
-            <div className="bg-cinza-escuro rounded-2xl p-6 border border-cinza-medio flex flex-col">
+            <div className="bg-cinza-escuro rounded-2xl p-7 border border-cinza-medio flex flex-col">
               <p className="font-brand text-cinza-texto text-sm tracking-wide mb-3">Avança Grátis</p>
-              <p className="font-display font-extrabold text-4xl mb-1">R$ 0</p>
+              <p className="font-display font-extrabold text-4xl mb-1 whitespace-nowrap">R$ 0</p>
               <p className="text-cinza-texto text-sm mb-6">pra sempre</p>
               <ul className="space-y-3 mb-8 flex-1">
                 {FREE_FEATURES.map((f) => (
@@ -403,12 +407,12 @@ export default function Home() {
             </div>
 
             {/* PRO — destaque no meio */}
-            <div className="bg-cinza-escuro rounded-2xl p-6 border border-verde flex flex-col relative shadow-[0_0_50px_rgba(200,240,0,0.1)] md:-mt-4 md:-mb-4">
+            <div className="bg-cinza-escuro rounded-2xl p-7 border border-verde flex flex-col relative shadow-[0_0_50px_rgba(200,240,0,0.1)] md:-mt-4 md:-mb-4">
               <div className="absolute -top-3.5 left-1/2 -translate-x-1/2 bg-verde text-preto text-xs font-medium px-4 py-1 rounded-full whitespace-nowrap">
                 RECOMENDADO
               </div>
               <p className="font-brand text-verde text-sm tracking-wide mb-3">Avança Pro</p>
-              <p className="font-display font-extrabold text-4xl mb-1">R$ 34,90<span className="text-cinza-texto text-xl font-normal font-sans"> / ano</span></p>
+              <p className="font-display font-extrabold text-4xl mb-1 whitespace-nowrap">R$ 34,90<span className="text-cinza-texto text-xl font-normal font-sans"> / ano</span></p>
               <p className="text-cinza-texto text-xs mb-3">ou 3× R$ 12,90</p>
               <p className="text-branco text-sm mb-6">Menos que um cafezinho por mês</p>
               <ul className="space-y-3 mb-8 flex-1">
@@ -425,18 +429,22 @@ export default function Home() {
             </div>
 
             {/* PRO MAX — em breve */}
-            <div className="bg-cinza-escuro rounded-2xl p-6 border border-cinza-medio flex flex-col opacity-60">
+            <div className="bg-cinza-escuro rounded-2xl p-7 border border-cinza-medio flex flex-col opacity-60">
               <div className="flex items-center justify-between mb-3">
                 <p className="font-brand text-cinza-texto text-sm tracking-wide">Avança Pro Max</p>
                 <span className="bg-cinza-medio text-cinza-texto text-[10px] font-medium px-3 py-1 rounded-full whitespace-nowrap">
                   EM BREVE
                 </span>
               </div>
-              <p className="font-display font-extrabold text-4xl mb-6">R$ 79,90<span className="text-cinza-texto text-xl font-normal font-sans"> / ano</span></p>
+              <p className="font-display font-extrabold text-4xl mb-6 whitespace-nowrap">R$ 79,90<span className="text-cinza-texto text-xl font-normal font-sans"> / ano</span></p>
               <ul className="space-y-3 mb-8 flex-1">
-                {['Tudo do Avança Pro', 'Eva — IA emocional (V2)', 'Módulo Família (V3)'].map((f) => (
-                  <li key={f} className="flex items-center gap-2">
-                    <span className="text-cinza-claro text-xs">·</span>
+                {[
+                  'Tudo do Avança Pro',
+                  'Eva — IA que celebra suas metas e te apoia quando o cansaço bater',
+                  'Família — momentos de qualidade com seus filhos e companheiro(a)',
+                ].map((f) => (
+                  <li key={f} className="flex items-start gap-2">
+                    <span className="text-cinza-claro text-xs mt-1 flex-shrink-0">·</span>
                     <span className="text-cinza-texto text-sm">{f}</span>
                   </li>
                 ))}
