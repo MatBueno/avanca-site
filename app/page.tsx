@@ -161,7 +161,7 @@ export default function Home() {
               Registra o turno. A gente mostra o que sobrou de verdade —
               descontado gasolina, manutenção e todo o resto.
             </p>
-            <div className="flex flex-col sm:flex-row gap-3">
+            <div className="hidden sm:flex flex-row gap-3">
               <a
                 href={PLAY_STORE_URL}
                 className="flex items-center justify-center gap-2 bg-verde text-preto font-medium text-base px-7 py-4 rounded-2xl hover:opacity-90 transition-opacity"
@@ -176,7 +176,7 @@ export default function Home() {
                 iOS — em breve
               </a>
             </div>
-            <p className="text-cinza-claro text-sm mt-4">
+            <p className="hidden sm:block text-cinza-claro text-sm mt-4">
               Grátis pra sempre nos recursos essenciais
             </p>
           </div>
