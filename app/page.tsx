@@ -16,7 +16,7 @@ const PROBLEMS = [
   },
   {
     icon: 'grafico',
-    text: 'Não sabe qual app vale mais a pena rodar, nem qual dia da semana rende mais pra você.',
+    text: 'Você sente que alguns apps pagam melhor. O Avança confirma qual — e qual dia da semana rende mais pra você.',
   },
 ]
 
@@ -479,7 +479,7 @@ export default function Home() {
             <p>
               O Brasil tem{' '}
               <strong className="text-branco">mais de 80 milhões de pessoas endividadas.</strong>{' '}
-              A maioria não sabe quanto ganha de verdade. Trabalha muito, gasta sem ver, e chega no fim do mês sem entender o que aconteceu.
+              A maioria trabalha duro mas não tem os dados organizados pra saber o que sobrou de verdade. Trabalha muito, corre bem — mas no fim do mês, os números não fecham sem uma visão clara.
             </p>
             <p>
               Para motoristas e entregadores, isso é ainda mais duro. São horas de corre, risco no trânsito, desgaste no corpo — e no final, a conta não fecha.
