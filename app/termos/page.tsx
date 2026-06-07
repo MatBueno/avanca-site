@@ -55,7 +55,7 @@ export default function Termos() {
           </p>
           <ul className="list-disc list-inside space-y-1 pl-2">
             <li><strong className="text-branco">Avança Grátis:</strong> recursos essenciais, disponíveis para sempre sem custo.</li>
-            <li><strong className="text-branco">Avança Pro:</strong> funcionalidades avançadas de análise, mediante pagamento anual ou parcelado.</li>
+            <li><strong className="text-branco">Avança Pro:</strong> funcionalidades avançadas de análise, mediante pagamento anual via PIX.</li>
           </ul>
         </Section>
 
@@ -75,7 +75,7 @@ export default function Termos() {
           <ul className="list-disc list-inside space-y-1 pl-2">
             <li>O acesso Pro é ativado após confirmação do pagamento (geralmente instantânea);</li>
             <li>O plano anual garante acesso por 12 meses a partir da ativação;</li>
-            <li>O parcelamento em 3× não é automático — o valor integral é cobrado em até 3 transações PIX independentes.</li>
+
           </ul>
           <p>
             <strong className="text-branco">Política de reembolso:</strong> reembolso integral disponível em até 7 dias
