@@ -207,7 +207,7 @@ export default function Home() {
           </h2>
           {/* Mobile: scroll horizontal */}
           <CarouselMobile count={3}>
-            <div className="flex gap-3 pb-2" style={{ paddingLeft: '11vw', paddingRight: '11vw' }}>
+            <div className="flex gap-3 pb-2" style={{ paddingLeft: '11vw', paddingRight: 'calc(11vw + 16px)' }}>
               {PROBLEMS.map(({ icon, text }) => (
                 <div key={icon} className="snap-center flex-none w-[78vw] bg-preto/80 backdrop-blur-sm rounded-2xl p-6 border border-cinza-medio">
                   <div className="mb-4"><ProblemIcon name={icon} /></div>
@@ -247,7 +247,7 @@ export default function Home() {
           </h2>
           {/* Mobile: scroll horizontal com snap */}
           <CarouselMobile count={3}>
-            <div className="flex gap-4 pb-2" style={{ paddingLeft: '14vw', paddingRight: '14vw' }}>
+            <div className="flex gap-4 pb-2" style={{ paddingLeft: '14vw', paddingRight: 'calc(14vw + 16px)' }}>
               {STEPS.map(({ num, title, desc }) => (
                 <div key={num} className="snap-center flex-none w-[72vw] bg-preto/50 border border-cinza-medio rounded-2xl p-6">
                   <span className="font-display font-extrabold text-6xl text-verde/25 block mb-4 leading-none">{num}</span>
@@ -329,7 +329,7 @@ export default function Home() {
           </p>
           {/* Mobile: scroll horizontal — Pro aparece no centro */}
           <CarouselMobile count={3} defaultIndex={1}>
-            <div className="flex gap-3 pt-5 pb-2 text-left" style={{ paddingLeft: '9vw', paddingRight: '9vw' }}>
+            <div className="flex gap-3 pt-5 pb-2 text-left" style={{ paddingLeft: '9vw', paddingRight: 'calc(9vw + 16px)' }}>
               {/* Free */}
               <div className="snap-center flex-none w-[82vw] bg-cinza-escuro rounded-2xl p-6 border border-cinza-medio flex flex-col">
                 <p className="font-brand text-cinza-texto text-sm tracking-wide mb-3">Avança Grátis</p>
